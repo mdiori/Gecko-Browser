@@ -12,7 +12,7 @@
 
         <activity
             android:name=".MainActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|uiMode">
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -33,9 +33,6 @@
                 <data android:scheme="javascript"/>
             </intent-filter>
         </activity>
-        <activity
-            android:name=".SettingsActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|uiMode"/>
     </application>
 
 </manifest>
