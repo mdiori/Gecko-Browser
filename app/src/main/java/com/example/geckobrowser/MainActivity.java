@@ -12,7 +12,7 @@ import org.mozilla.geckoview.GeckoSessionSettings;
 import org.mozilla.geckoview.GeckoView;
 
 public class MainActivity extends AppCompatActivity {
-    public String INITIAL_URL = "192.168.1.2";
+    public String INITIAL_URL = "192.168.1.2/testesMatheus/index.php";
     private GeckoView mGeckoView;
     private GeckoSession mGeckoSession;
     private GeckoSessionSettings.Builder settingsBuilder = new GeckoSessionSettings.Builder();
@@ -20,10 +20,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-
-
-            requestWindowFeature(Window.FEATURE_NO_TITLE);
-            this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 
         super.onCreate(savedInstanceState);
